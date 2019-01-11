@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="left"></div>
+            </div>
+            <div class="col-6">
+               <div class="right">
+
+               </div>
+            </div>
+        </div>
+    </div>
+    <button class="opener-btn">
+        <img class="opener-img" src="img/chat.png" alt=""> <span class="opener-btn-span">CHAT</span>
+    </button>
+    <div class="myform-wrap">
+        <div class="myform-label">
+            Online <button class="myform-close">-</button>
+        </div>
+        <div class="myform-content">
+           <div class="magic">
+                <img class="avatar" src="img/litwin-circle.png" alt="">
+                <div class="myform-cloud-answer">
+                    <p class="answer-text">Witaj, jestem "Jabot" (wirtualny bot), podaj imię i zadaj pytanie!</p>
+                </div>
+            </div>     
+                <input id="imie" class="myinput" type="text" placeholder="*Podaj Imię">
+                <textarea name="question" id="question" rows="10" placeholder="*Twoje pytanie:"></textarea>
+         
+        </div> 
+<!-- ANSWER -->
+        <div class="myform-answer">
+            <img class="avatar" src="img/avatar.png" alt="">
+            <div id="question-cloud-1" class="myform-cloud">
+                <p id="question-1" class="usersquestion"></p>
+            </div>
+
+            <img class="avatar" src="img/litwin-circle.png" alt="">
+            <div id="first-answer" class="myform-cloud-answer">
+                <img class="answer-gif" src="img/answer.gif" alt="">
+                <p id="answer-1" class="answer-text"></p>
+            </div>
+        </div>
+
+        <input type="submit" class="sender-btn" value="SEND">
+        <button class="sender-btn-2">SEND</button>
+           
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
